@@ -1,0 +1,29 @@
+    <div class="large-3 medium-3 column">
+        <!-- #sidenav -->
+        <ul id="sidenav" class="tabs vertical">
+            <li class="tab-title <%= activeMenu == "stores" ? "active" : "" %>">
+                <a class="tab-stores" href="/retailer/stores" title="Stores">
+                    <span class="icon"></span> Stores</a>
+            </li>
+            <li class="tab-title <%= activeMenu == "inventory" ? "active" : "" %>">
+                <a class="tab-inventory" href="/retailer/inventory" title="Inventory">
+                    <span class="icon"></span> Inventory</a>
+            </li>
+            <li class="tab-title <%= activeMenu == "orders" ? "active" : "" %>">
+                <a class="tab-orders" href="/retailer/orders" title="Orders">
+                    <span class="icon"></span> Orders</a>
+            </li>
+            <li class="tab-title <%= activeMenu == "dashboard" ? "active" : "" %>">
+                <a class="tab-dashboard" href="/retailer/dashboard" title="Dashboard">
+                    <span class="icon"></span> Dashboard</a>
+            </li>
+            <li class="tab-title <%= activeMenu == "distributor" ? "active" : "" %>">
+                <a class="tab-distributor" href="/retailer/distributor" title="Distributor">
+                    <span class="icon"></span> Distributor</a>
+            </li>
+            <li class="tab-title <%= activeMenu == "marketing" ? "active" : "" %>">
+                <a class="tab-marketing" href="/retailer/marketing" title="Marketing">
+                    <span class="icon"></span> Marketing</a>
+            </li>
+        </ul> <!-- end of #sidenav -->
+    </div>

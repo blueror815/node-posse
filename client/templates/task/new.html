@@ -1,0 +1,91 @@
+<ion-view title="{{navTitle}}" align-title="left">
+    <ion-content>
+        <div class="bar bar-subheader bar-balanced static task_title">
+            <label class="pull-left">Create a New Task</label>
+        </div>
+        <ion-list>
+            <div class="row">
+                <div class="col">
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label">Title</span>
+                        <input type="text" placeholder="Title of task" ng-model="title">
+                    </label>
+                </div>
+                <div class="col">
+                    <label class="item item-select item-stacked-label">
+                        <span class="input-label">Store</span>
+                        <select placeholder="(select)" ng-model="store">
+                            <option ng-repeat="option in stores" value="{{option._id}}">{{option.name}}</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Description</span>
+                <textarea placeholder="Description of task" ng-model="description"></textarea>
+            </label>
+            <label class="item item-select item-stacked-label">
+                <span class="input-label">Task Bucket</span>
+                <select placeholder="(select)" ng-model="buckets">
+                    <option ng-repeat="option in buckets" value="{{option._id}}">{{option.name}}</option>
+                </select>
+            </label>
+            <div class="row">
+                <div class="col">
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label">Due Date</span>
+                        <input type="text" ng-model="duedate">
+                    </label>
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label">Preset Time</span>
+                    </label>
+                </div>
+                <div class="col">
+                    <label class="item item-select item-stacked-label">
+                        <span class="input-label">Due Time</span>
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label class="item item-select item-stacked-label">
+                        <span class="input-label">Priority</span>
+                        <select ng-model="priority">
+                            <option value="low">Low</option>
+                            <option value="med-low">Med Low</option>
+                            <option value="med-high">Med High</option>
+                            <option value="high">High</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="col">
+                    <label class="item item-select item-stacked-label">
+                        <span class="input-label">Assign To</span>
+                        <select ng-model="assignto">
+                            <option ng-repeat="option in users" value="{{option.userId}}">{{option.name}}</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="col">
+                    <label class="item item-select item-stacked-label">
+                        <span class="input-label">Fallback To</span>
+                        <select ng-model="fallbackto">
+                            <option ng-repeat="option in users" value="{{option.userId}}">{{option.name}}</option>
+                        </select>
+                    </label>
+                </div>
+            </div>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Attachments</span>
+                <input type="file" ng-model="attachment"></select>
+            </label>
+        </ion-list>
+    </ion-content>
+    <ion-footer-bar>
+        <div class="bottom_task">
+            <div class="bottom_btns">
+                <button class="button button-positive">Submit</button>
+            </div>
+        </div>
+    </ion-footer-bar>    
+</ion-view>

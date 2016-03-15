@@ -1,0 +1,99 @@
+[
+	{
+		"_id":"565e6aa9050005ee2668b67f",
+		"status":"unresolved",
+		"taskType":"Paper Out",
+		"priority":"high",
+		"title":"Paper Jam at ATM 1234",
+		"description":"This is a test task entry.",
+		"region":"coming soon",
+		"location":
+		{
+			"name":"POM-124",
+			"_id":"565e6aa9050005ee2668b5f1"
+		},
+		"due":"2015-12-07T03:51:05.278Z",
+		"assignTo":
+		{
+			"name":"Test User 1",
+			"_id":"565e6aa8050005ee2668b53e"
+		},
+		"assignmentHistory":
+		[{
+			"user":
+			{
+				"name":"Test User 1",
+				"_id":"565e6aa8050005ee2668b53e"
+			},
+			"reason":"Original assignment of task.",
+			"date":"2015-12-02T03:51:05.355Z",
+			"_id":"565e6aa9050005ee2668b681"
+		}],
+		"unresolveHistory":
+		[{
+			"reason":"Automatic re-assign on expire",
+			"date":"2015-12-07T03:51:10.137Z",
+			"_id":"5665022ee6b2fafe293d9162"
+		}],
+		"createdBy":
+			{"name":"Mike Borek","_id":"565e6aa8050005ee2668b53d"},
+		
+		"created":"2015-12-02T03:51:05.278Z",
+		"attachments":
+		[{
+			"upload":{
+				"size":0,
+				"checksum":"da39a3ee5e6b4b0d3255bfef95601890afd80709",
+				"name":"Random Text File.txt",
+				"mimeType":"text/plain",
+				"client":"565e6aa8050005ee2668b542",
+				"_id":"565e6aa9050005ee2668b670",
+				"__v":0,"createdOn":"2015-12-02T03:51:05.279Z"},
+				"type":"image",
+				"created":"2015-12-02T03:51:05.278Z",
+				"_id":"565e6aa9050005ee2668b680"
+		}],
+		"resolve":{"notes":[],"user":null},
+		"consequence":"Mark as unresolved, notify creator."
+	},
+	
+	{"_id":"566b128be6b2fafe293d9175"
+,"status":"unresolved","taskType":"Lock Jam","priority":"high","title":"Test","description":"Test","region"
+:"coming soon","location":{"name":"POM-126","_id":"565e6aa9050005ee2668b606"},"due":"2015-12-11T19:11
+:27.210Z","assignTo":{"name":"Test Manager A1","_id":"565e6aa8050005ee2668b540"},"assignToOnExpire":null
+,"assignmentHistory":[{"user":{"name":"Mike Borek","_id":"565e6aa8050005ee2668b53d"},"reason":"Original
+ assignment of task.","date":"2015-12-11T18:14:35.869Z","_id":"566b128be6b2fafe293d9176"},{"user":{"name"
+:"Test Manager A1","_id":"565e6aa8050005ee2668b540"},"reason":"Automatic re-assign on expire","date"
+:"2015-12-11T18:43:03.075Z","_id":"566b1937e6b2fafe293d9177"}],"unresolveHistory":[{"reason":"Automatic
+ re-assign on expire","date":"2015-12-11T19:11:27.699Z","_id":"566b1fdfe6b2fafe293d9178"}],"createdBy"
+:{"name":"Test Manager A1","_id":"565e6aa8050005ee2668b540"},"created":"2015-12-11T18:14:35.866Z","attachments"
+:[],"resolve":{"notes":[],"user":null},"consequence":"Mark as unresolved, notify creator."},{"_id":"565e6aa9050005ee2668b682"
+,"status":"open","taskType":"System Issue","priority":"high","title":"ATM Power Issue","description"
+:"This is a test task entry.","region":"coming soon","location":{"name":"POM-125","_id":"565e6aa9050005ee2668b5fc"
+},"due":"2015-12-17T03:51:05.278Z","assignTo":{"name":"Test User 1","_id":"565e6aa8050005ee2668b53e"
+},"assignToOnExpire":"565e6aa8050005ee2668b53f","assignmentHistory":[{"user":{"name":"Test User 1","_id"
+:"565e6aa8050005ee2668b53e"},"reason":"Original assignment of task.","date":"2015-12-02T03:51:05.361Z"
+,"_id":"565e6aa9050005ee2668b684"}],"unresolveHistory":[],"createdBy":{"name":"Mike Borek","_id":"565e6aa8050005ee2668b53d"
+},"created":"2015-12-02T03:51:05.278Z","attachments":[{"upload":{"size":0,"checksum":"da39a3ee5e6b4b0d3255bfef95601890afd80709"
+,"name":"Random Text File.txt","mimeType":"text/plain","client":"565e6aa8050005ee2668b542","_id":"565e6aa9050005ee2668b670"
+,"__v":0,"createdOn":"2015-12-02T03:51:05.279Z"},"type":"image","created":"2015-12-02T03:51:05.278Z"
+,"_id":"565e6aa9050005ee2668b683"}],"resolve":{"notes":[],"user":null},"consequence":"Forward to Test
+ User 2"},
+ 
+ {"_id":"565e6aa9050005ee2668b685","status":"resolved","taskType":"Cash Drawer","priority":"high"
+,"title":"Bills being throw into the street","description":"This is a test task entry.","region":"coming
+ soon","location":{"_id":"565e6aa9050005ee2668b5e9","name":"POM-123"},"due":"2015-12-17T03:51:05.278Z"
+,"assignTo":{"name":"Test User 1","_id":"565e6aa8050005ee2668b53e"},"assignToOnExpire":"565e6aa8050005ee2668b53f"
+,"assignmentHistory":[{"user":{"name":"Test User 1","_id":"565e6aa8050005ee2668b53e"},"reason":"Original
+ assignment of task.","date":"2015-12-02T03:51:05.367Z","_id":"565e6aa9050005ee2668b686"}],"unresolveHistory"
+:[],"createdBy":{"name":"Mike Borek","_id":"565e6aa8050005ee2668b53d"},"created":"2015-12-02T03:51:05
+.278Z","attachments":[],"resolve":{"notes":[],"resolvedOn":"2015-12-02T03:51:05.278Z","user":{"name"
+:"Mike Borek","_id":"565e6aa8050005ee2668b53d"}},"consequence":"Forward to Test User 2"},{"_id":"565e6aa9050005ee2668b687"
+,"status":"unresolved","taskType":"Screen Issue","priority":"high","title":"Damage from vehical collision"
+,"description":"This is a test task entry.","region":"coming soon","location":{"name":"POM-124","_id"
+:"565e6aa9050005ee2668b5f1"},"due":"2015-12-17T03:51:05.278Z","assignTo":{"name":"Test User 1","_id"
+:"565e6aa8050005ee2668b53e"},"assignmentHistory":[{"user":{"name":"Test User 1","_id":"565e6aa8050005ee2668b53e"
+},"reason":"Original assignment of task.","date":"2015-12-02T03:51:05.371Z","_id":"565e6aa9050005ee2668b688"
+}],"unresolveHistory":[],"createdBy":{"name":"Mike Borek","_id":"565e6aa8050005ee2668b53d"},"created"
+:"2015-12-02T03:51:05.278Z","attachments":[],"resolve":{"notes":[],"user":null},"consequence":"Mark as
+ unresolved, notify creator."}]

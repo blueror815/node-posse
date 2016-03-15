@@ -1,0 +1,26 @@
+<ion-view title="{{navTitle}}" align-title="left">
+    <ion-content>
+        <div class="bar bar-subheader bar-stable static task_title">
+            <label class="pull-right">Reject Task</label>
+        </div>
+        <ion-list>
+            <div class="task-title">{{task.name}}</div>
+            <div class="task-subtitle">{{task.name}} | {{task.location}}</div>
+            <label class="item item-input">
+                <textarea placeholder="Enter reason here"></textarea>
+            </label>
+            <div class="button-bar">
+                <button class="button button-stable">Add Video</button>
+                <button class="button button-stable">Add Pic</button>
+            </div>
+            <div class="task-pictures"></div>
+        </ion-list>
+    </ion-content>
+    <ion-footer-bar>
+        <div class="bottom_task">
+            <div class="bottom_btns">
+                <button class="button button-energized" ng-click="RejectTask()">Reject Task</button>
+            </div>
+        </div>
+    </ion-footer-bar>    
+</ion-view>

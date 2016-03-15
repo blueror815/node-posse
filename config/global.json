@@ -1,0 +1,17 @@
+{
+  "global": {
+    "parseVersion": "1.4.2"
+  },
+  "applications": {
+    "AdminCloudCode": {
+      "link": "NotiBrew"
+    },
+    "NotiBrew": {
+      "applicationId": "upTrZvYWTbzoZKTI9Up9uGWYHiamL3LCWNvfiTrx",
+      "masterKey": "UXkRORqhyp22XBg28k0EOxSZitOgVRv5gaDWFHJ8"
+    },
+    "_default": {
+      "link": "NotiBrew"
+    }
+  }
+}

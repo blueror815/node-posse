@@ -1,0 +1,31 @@
+[
+	{
+		"name":"ATM Repairs",
+		"description":"A test collection of ATM issue tasks.",
+		"_id":"565e6aa9050005ee2668b666",
+		"taskCount" : 2,
+		"types":
+			["Cash Drawer","Lock Jam","Network Issue","Access Issue","System Issue","Screen Issue","Paper Out"]
+	},
+	{
+		"name":"Customer Support",
+		"description":"A test collection of customer support tasks.",
+		"_id":"565e6aa9050005ee2668b667",
+		"taskCount" : 2,
+		"types":["Complaint","Equipment Issue","Access Issue","Question","Survey Response"]
+	},
+	{
+		"name":"IT Support",
+		"description":"A test collection of IT support tasks.",
+		"_id":"565e6aa9050005ee2668b661",
+		"taskCount" : 2,
+		"types":["Email","POS System","Telephone System","App Issue","App Access","Server Issue","Safe Issue","Wifi Issue","PC Issue","Network Issue"]
+	},
+	{
+		"name":"Store Operations",
+		"description":"A test collection of maintenance tasks.",
+		"_id":"565e6aa9050005ee2668b660",
+		"taskCount" : 2,
+		"types":["Lobby - Floors","Lobby - Walls","Lobby - Ceiling","Teller - Doors","Teller - Locks","Teller - Walls","Exterior - Sidewalk","Exterior - Store Front","Exterior - Paint","Exterior - POM Sign"]
+	}
+]

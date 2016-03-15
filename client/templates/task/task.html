@@ -1,0 +1,32 @@
+﻿<ion-view class="red" title="{{navTitle}}" align-title="left">
+    <ion-content>
+        <div class="bar bar-subheader bar-stable static task_title">
+            <label id="cslide_index" class="pull-left"><span>1</span>/{{tasks.length}}</label>
+            <label class="pull-right">Bucket</label>
+        </div>
+        <ion-slide-box show-pager="false" on-slide-changed="slideHasChanged($index)">
+          <ion-slide class="c_slide" ng-repeat="task in tasks">
+            <div id="countdown{{$index}}" class="countdown"></div>
+            <label class="task_title_detail">Reassigns to Username</label>
+            <div class="task_slide_detail">
+                <div class="task-title">{{task.name}}</div>
+                <div class="task-subtitle">{{task.name}} | {{task.location.name}}</div>
+                <div class="task-description">{{task.description}}</div>
+                <div class="task-pictures"></div>
+                <div class="task-created">Created by: {{task.assignTo.name}}</div>
+                <div class="task-due-date">Due Date: {{formatDate(task.due)}}</div>
+                <div class="task-project">Project: {{task.taskCollection.name}}</div>
+            </div>
+          </ion-slide>
+        </ion-slide-box>
+    </ion-content>
+    <ion-footer-bar class="bar-assertive">
+        <div class="bottom_task red">
+            <div class="bottom_btns">
+                <button class="button button-energized" ng-click="RejectTask()">Reject</button>
+                <button class="button button-balanced" ng-click="ResolveTask()">Resolve</button>
+                <button class="button button-positive" ng-click="AssignTask()">Reassign</button>
+            </div>
+        </div>
+    </ion-footer-bar>    
+</ion-view>

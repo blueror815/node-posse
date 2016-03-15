@@ -1,0 +1,34 @@
+<ion-view title="{{navTitle}}" align-title="left">
+    <ion-content>
+        <div class="bar bar-subheader bar-stable static task_title">
+            <label class="pull-right">Reassign Task</label>
+        </div>
+        <ion-list>
+            <div class="task-title">{{task.name}}</div>
+            <div class="task-subtitle">{{task.name}} | {{task.location}}</div>
+            <label class="item item-input item-select">
+            <div class="input-label">
+              Reassign to
+            </div>
+            <select ng-model="user" name="user">
+                <option ng-repeat="option in users" value="{{option.userId}}">{{option.name}}</option>
+            </select>
+            </label>
+            <label class="item item-input">
+                <textarea placeholder="Enter reason here" ng-model="reason"></textarea>
+            </label>
+            <div class="button-bar">
+                <button class="button">Add Video</button>
+                <button class="button">Add Pic</button>
+            </div>
+            <div class="task-pictures"></div>
+        </ion-pane>
+    </ion-content>
+    <ion-footer-bar>
+        <div class="bottom_task">
+            <div class="bottom_btns">
+                <button class="button button-positive" ng-click="AssignUser()">Reassign Task</button>
+            </div>
+        </div>
+    </ion-footer-bar>    
+</ion-view>

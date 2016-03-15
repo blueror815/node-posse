@@ -1,0 +1,17 @@
+﻿<ion-view title="{{navTitle}}" align-title="left">
+    <ion-content class="black_dark">
+        <div class="cor_contain">
+            <div class="circle_contain">
+            </div>   
+        </div>
+    </ion-content>
+    <ion-footer-bar align-title="left" class="bar-assertive">
+        <div id="top_task" class="bottom_task">
+            <div class="footer_label">
+              <label>TOP 3</label>
+              <a class="coor_search" href=""><i class="ion-ios-search-strong"></i></a>
+            </div>
+            <a href="#/app/task" ng-click="viewTask('{{item._id}}')" ng-repeat="item in top_3tasks" class="top_task priority-{{item.priority}}">{{formatCountdown(item.due, now)}} | {{item.title}}</a>
+        </div>
+    </ion-footer-bar>    
+</ion-view>

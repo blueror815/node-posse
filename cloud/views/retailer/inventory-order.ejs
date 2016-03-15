@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<!-- 
+    DASHBOARD RETAILERS PAGE
+-->
+<html class="no-js" lang="en">
+    <head>
+        <title>Dashboard Retailers [Please change the title]</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Stylesheets -->
+        <link rel="stylesheet" type="text/css" href="../assets/retailer/css/font-awesome.min.css" media="screen"/>
+        <link rel="stylesheet" type="text/css" href="../assets/retailer/css/app.css" media="screen"/>
+        <!-- end of stylesheets -->
+        
+        <!-- Modernizr -->
+        <script type="text/javascript" src="../assets/retailer/bower_components/foundation/js/vendor/modernizr.js"></script> <!-- end of Modernizr -->
+    </head>
+    <body>
+        <!-- #container -->
+        <div id="container">
+            <div class="row">
+                <div class="large-12 column">
+                    <!-- #header -->
+                    <header id="header">
+                        <nav class="top-bar" data-topbar role="navigation">
+                            <ul class="title-area">
+                                <li class="name">
+                                    <h1>
+                                        <a href="#" title="notibrew">
+                                            <img src="../assets/retailer/images/logo.png" alt="notibrew"/>
+                                        </a>
+                                    </h1>
+                                </li>
+                                <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+                                <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+                            </ul>
+
+                            <section class="top-bar-section">
+                              <!-- Right Nav Section -->
+                                <ul class="account right">
+                                    <li class="has-dropdown">
+                                        <a href="#">John Doe</a>
+                                        <ul class="dropdown">
+                                            <li><a href="#">Account</a></li>
+                                            <li><a href="#">Settings</a></li>
+                                            <li><a href="#">Logout</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </section>
+                        </nav>
+                    </header> <!-- end of #header -->
+
+                    <!-- #main -->
+                    <main id="main" class="row">
+                        <div class="large-3 medium-3 column">
+                            <!-- #sidenav -->
+                            <ul id="sidenav" class="tabs vertical" data-tab>
+                                <li class="tab-title">
+                                    <a class="tab-stores" href="#stores" title="Stores">
+                                        <span class="icon"></span> Stores</a>
+                                </li>
+                                <li class="tab-title active">
+                                    <a class="tab-inventory" href="#inventory" title="Inventory">
+                                        <span class="icon"></span> Inventory</a>
+                                </li>
+                                <li class="tab-title">
+                                    <a class="tab-orders" href="#orders" title="Orders">
+                                        <span class="icon"></span> Orders</a>
+                                </li>
+                                <li class="tab-title">
+                                    <a class="tab-dashboard" href="#dashboard" title="Dashboard">
+                                        <span class="icon"></span> Dashboard</a>
+                                </li>
+                                <li class="tab-title">
+                                    <a class="tab-distributor" href="#distributor" title="Distributor">
+                                        <span class="icon"></span> Distributor</a>
+                                </li>
+                                <li class="tab-title">
+                                    <a class="tab-marketing" href="#marketing" title="Marketing">
+                                        <span class="icon"></span> Marketing</a>
+                                </li>
+                            </ul> <!-- end of #sidenav -->
+                        </div>
+                        
+                        <div class="large-9 medium-8 column">
+                            <!-- Tabs content -->
+                            <div id="main-content" class="tabs-content">
+                                <!-- #stores -->
+                                <div id="stores" class="content">
+                                    <table class="table table--dsh">
+                                        <thead>
+                                            <tr>
+                                                <th class="table--dsh__header">Store name</th>
+                                                <th class="table--dsh__header">Address</th>
+                                                <th class="table--dsh__header">Hours of Operation</th>
+                                                <th class="table--dsh__header">Pictures/Logo</th>
+                                                <th class="table--dsh__header">Description</th>
+                                                <th class="table--dsh__header" style="width: 85px; text-align: center;">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="store">
+                                                <td class="store__name"><a href="#" title="Top Hops Beer Shop">Top Hops Beer Shop</a></td>
+                                                <td class="store__address">
+                                                    94 Orchard St,<br/>
+                                                    New York, NY 10002
+                                                </td>
+                                                <td class="store__hours">10am - 11pm</td>
+                                                <td class="store__logo">
+                                                    <img src="../assets/retailer/images/stores/Top Hops Beer Shop.jpg"
+                                                         title="Top Hops Beer Shop"/>
+                                                </td>
+                                                <td class="store__description">Top Hops is Ted Kenny's dream com true...</td>
+
+                                                <!-- Action -->
+                                                <td class="table--dsh__action-stores">
+                                                    <!-- Edit -->
+                                                    <a class="action__edit hvr-bob" href="store-view" title="Edit stores">
+                                                        <i class="fa fa-pencil"></i>
+                                                    </a> <!-- end of edit -->
+
+                                                    <!-- Remove -->
+                                                    <a class="action__remove hvr-bob" href="stores/delete.html" data-reveal-id="deleteStore" title="Delete store">
+                                                        <i class="fa fa-times"></i>
+                                                    </a> <!-- end of remove -->
+                                                </td> <!-- end of actions -->
+                                            </tr>
+
+                                            <tr class="store">
+
+                                                <td class="store__name"><a href="#" title="Good Beer">Good Beer</a></td>
+                                                <td class="store__address">
+                                                    422 # 9th St,<br/>
+                                                    New York, NY 10009
+                                                </td>
+                                                <td class="store__hours">11am - 10pm</td>
+                                                <td class="store__logo">
+                                                    <img src="../assets/retailer/images/stores/Good Beer.jpg"
+                                                         title="Good Beer"/>
+                                                </td>
+                                                <td class="store__description">Good Beer is a craft beer shop in the East Village...</td>
+                                                <!-- Action -->
+                                                <td class="table--dsh__action-stores">
+                                                    <!-- Edit -->
+                                                    <a class="action__edit hvr-bob" href="store-view" title="Edit stores">
+                                                        <i class="fa fa-pencil"></i>
+                                                    </a> <!-- end of edit -->
+
+                                                    <!-- Remove -->
+                                                    <a class="action__remove hvr-bob" href="stores/delete.html" data-reveal-id="deleteStore" title="Delete store">
+                                                        <i class="fa fa-times"></i>
+                                                    </a> <!-- end of remove -->
+                                                </td> <!-- end of actions -->
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    
+                                    <!-- Stores pagination -->
+                                    <div class="pagination-centered">
+                                        <ul class="pagination">
+                                            <li class="arrow unavailable"><a href="">&lt;</a>
+                                            </li><li class="current"><a href="">1</a>
+                                            </li><li><a href="">2</a>
+                                            </li><li><a href="">3</a>
+                                            </li><li><a href="">4</a>
+                                            </li><li class="arrow"><a href="">&gt;</a></li>
+                                        </ul>
+                                    </div> <!-- end of stores pagination -->
+                                </div> <!-- end of #stores -->
+
+                                <!-- #inventory -->
+                                <div id="inventory" class="content active">
+                                    <table class="table table--dsh">
+                                        <thead>
+                                            <tr>
+                                                <th class="table--dsh__header">SKU</th>
+                                                <th class="table--dsh__header">Price</th>
+                                                <th class="table--dsh__header">Name</th>
+                                                <th class="table--dsh__header">Distributor</th>
+                                                <th class="table--dsh__header">Quantity</th>
+                                                <th class="table--dsh__header">Demand</th>
+                                                <th class="table--dsh__header" style="text-align: center;"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <!-- SKU -->
+                                                <td>Bottles</td> <!-- end of SKU -->
+
+                                                <!-- Price -->
+                                                <td>$12.99</td> <!-- end of Price -->
+
+                                                <!-- Name -->
+                                                <td>Avery Fortuna</td> <!-- end of name -->
+
+                                                <!-- Distributor -->
+                                                <td>S.K.I. BEER</td> <!-- end of distributor -->
+
+                                                <!-- Quantity -->
+                                                <td>56</td> <!-- end of quantity -->
+
+                                                <!-- Demand -->
+                                                <td>50</td> <!-- end of demand -->
+
+                                                <!-- Action -->
+                                                <td class="table--dsh__action">
+                                                    <!-- Order action -->
+                                                    <a class="button secondary right" href="#" title="Order">
+                                                        <i class="fa fa-plus"></i> Order
+                                                    </a> <!-- end of order action -->
+                                                </td> <!-- end of actions -->
+                                            </tr>
+
+                                            <tr>
+                                                <!-- SKU -->
+                                                <td>Bottles</td> <!-- end of SKU -->
+
+                                                <!-- Price -->
+                                                <td>$10</td> <!-- end of Price -->
+
+                                                <!-- Name -->
+                                                <td>Delirium Deliria</td> <!-- end of name -->
+
+                                                <!-- Distributor -->
+                                                <td>Baxter Brewing</td> <!-- end of distributor -->
+
+                                                <!-- Quantity -->
+                                                <td>72</td> <!-- end of quantity -->
+
+                                                <!-- Demand -->
+                                                <td>100</td> <!-- end of demand -->
+                                                                               <!-- Action -->
+                                                <td class="table--dsh__action">
+                                                    <!-- Order action -->
+                                                    <a class="button secondary right" href="#" title="Order">
+                                                        <i class="fa fa-plus"></i> Order
+                                                    </a> <!-- end of order action -->
+                                                </td> <!-- end of actions -->
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <!-- .outer-actions -->
+                                    <div class="outer-actions">
+                                        <!-- Bulk actions -->
+                                        <ul class="no-bullet inline-list bulk-actions right">
+                                            <!-- Edit -->
+                                            <li><a class="button alert" href="inventory-edit" title="Edit">
+                                                    <i class="fa fa-pencil"></i> Edit
+                                                </a></li> <!-- end of edit -->
+                                        </ul> <!-- end of bulk actions -->
+
+                                        <!-- Items pagination -->
+                                        <div class="pagination-centered">
+                                            <ul class="pagination">
+                                                <li class="arrow unavailable"><a href="">&lt;</a>
+                                                </li><li class="current"><a href="">1</a>
+                                                </li><li><a href="">2</a>
+                                                </li><li><a href="">3</a>
+                                                </li><li><a href="">4</a>
+                                                </li><li class="arrow"><a href="">&gt;</a></li>
+                                            </ul>
+                                        </div> <!-- end of items pagination -->
+
+                                    </div> <!-- end of .outer-actions -->
+
+                                </div> <!-- end of #inventory -->
+
+                                <!-- #orders -->
+                                <div id="orders" class="content">
+                                    <table class="table table--dsh">
+                                        <thead>
+                                            <tr>
+                                                <th class="table--dsh__header">Order ID</th>
+                                                <th class="table--dsh__header">Customer Name</th>
+                                                <th class="table--dsh__header">Date</th>
+                                                <th class="table--dsh__header">Payment Method</th>
+                                                <th class="table--dsh__header">Details</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <!-- Order ID -->
+                                                <td>001</td> <!-- end of order ID -->
+                                                
+                                                <!-- Customer name -->
+                                                <td>Michael Smith</td> <!-- end of customer name -->
+                                                
+                                                <!-- Date -->
+                                                <td>10/08/2015</td> <!-- end of date -->
+                                                
+                                                <!-- Payment method -->
+                                                <td>Master Card *5574</td> <!-- end of payment method -->
+                                                
+                                                <!-- Details -->
+                                                <td class="status-waiting">waiting for delivery and pickup</td> <!-- end of details -->
+                                            </tr>
+
+                                            <tr>
+                                                <!-- Order ID -->
+                                                <td>002</td> <!-- end of order ID -->
+                                                
+                                                <!-- Customer name -->
+                                                <td>Kelly J. Welter</td> <!-- end of customer name -->
+                                                
+                                                <!-- Date -->
+                                                <td>26/08/2015</td> <!-- end of date -->
+                                                
+                                                <!-- Payment method -->
+                                                <td>Visa *3786</td> <!-- end of payment method -->
+                                                
+                                                <!-- Details -->
+                                                <td class="has-details">
+                                                    <a href="#" data-reveal-id="orderDetails" title="details">details</a></td> <!-- end of details -->
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="pagination-centered">
+                                        <ul class="pagination">
+                                            <li class="arrow unavailable"><a href="">&lt;</a>
+                                            </li><li class="current"><a href="">1</a>
+                                            </li><li><a href="">2</a>
+                                            </li><li><a href="">3</a>
+                                            </li><li><a href="">4</a>
+                                            </li><li class="arrow"><a href="">&gt;</a></li>
+                                        </ul>
+                                    </div> <!-- end of items pagination -->
+                                </div> <!-- end of #orders -->
+
+                                <!-- Dashboard -->
+                                <div id="dashboard" class="content">
+                                    
+                                    <!--
+                                        DASHBOARD VIEW ACTION
+                                    -->
+                                    <header class="store-action">
+                                        <span class="h4">ORDERS FROM RETAILERS</span>
+                                        
+                                        <!-- Actions -->
+                                        <ul class="no-bullet inline-list right">
+                                            <li><a class="lnk-underlined has-label" href="dashboard-orders-to-be-fulfilled.html" title="Orders to be fulfilled">Orders to be fulfilled <span class="label secondary round">12</span></a></li>
+                                        </ul> <!-- end of: Actions -->
+                                    </header> <!-- END OF DASHBOARD VIEW ACTION -->
+                                    
+                                    <!-- Details -->
+                                    <article>
+                                        <table class="table table--dsh">
+                                            <thead>
+                                                <tr>
+                                                    <th>Order ID</th>
+                                                    <th>Retailer Name</th>
+                                                    <th>Date</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <!-- Order ID -->
+                                                    <td>001</td> <!-- end of: Order ID -->
+                                                    
+                                                    <!-- Retailer name -->
+                                                    <td>Michael Smith</td> <!-- end of: Retailer name -->
+                                                    
+                                                    <!-- Date -->
+                                                    <td>10/08/2015 3:26PM</td> <!-- end of: Date -->
+                                                </tr>
+                                                <tr>
+                                                    <!-- Order ID -->
+                                                    <td>002</td> <!-- end of: Order ID -->
+                                                    
+                                                    <!-- Retailer name -->
+                                                    <td>Kelly J. Welter</td> <!-- end of: Retailer name -->
+                                                    
+                                                    <!-- Date -->
+                                                    <td>17/08/2015 6:20PM</td> <!-- end of: Date -->
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        
+                                        <!-- Items pagination -->
+                                        <div class="pagination-centered">
+                                            <ul class="pagination">
+                                                <li class="arrow unavailable"><a href="">&lt;</a>
+                                                </li><li class="current"><a href="">1</a>
+                                                </li><li><a href="">2</a>
+                                                </li><li><a href="">3</a>
+                                                </li><li><a href="">4</a>
+                                                </li><li class="arrow"><a href="">&gt;</a></li>
+                                            </ul>
+                                        </div> <!-- end of items pagination -->
+                                    </article> <!-- end of: Details -->
+                                </div> <!-- end of #dashboard -->
+
+                                <!-- Distributor -->
+                                <div id="distributor" class="content">
+                                    <ul class="no-bullet">
+                                        <li>
+                                            <a class="lnk-underlined" href="#" title="New Beer Distributor">New Beer Distributor</a></li>
+                                        <li>
+                                            <a class="lnk-underlined" href="#" title="Union Beer Distributor">Union Beer Distributor</a></li>
+                                        <li>
+                                            <a class="lnk-underlined" href="#" title="B & B Beverage Distributor">B & B Beverage Distributor</a></li>
+                                        <li>
+                                            <a class="lnk-underlined" href="#" title="Flair Beverages Inc.">Flair Beverages Inc.</a></li>
+                                        <li>
+                                            <a class="lnk-underlined" href="#" title="Carousel Beverages Corporation">Carousel Beverages Corporation</a></li>
+                                    </ul> <!-- end of list distributors -->
+                                </div> <!-- end of #distributor -->
+
+                                <!-- Marketing-->
+                                <div id="marketing" class="content">
+                                     <header class="store-action">
+                                        <span class="h4">&nbsp;</span>
+                                        
+                                        <!-- Actions -->
+                                        <button  class="button dropdown alert li-item right " data-dropdown="drop1" aria-controls="drop1" aria-expanded="false">Orders</button>
+                                        <ul id="drop1" data-dropdown-content class="f-dropdown" aria-hidden="true">
+                                            <li><a href="#" title="Day">DAY</a></li>
+                                            <li><a href="#" title="Month">MONTH</a></li>
+                                            <li><a href="#" title="Year">YEAR</a></li>
+                                            <li><a href="#" title="Region">REGION</a></li>
+                                        </ul>  
+                                        
+                                        <ul class="no-bullet inline-list right">
+                                            <li><a class="button secondary" href="#" title="Create"><i class="fa fa-plus"></i>&nbsp;&nbsp;Create</a></li>    
+                                        </ul> <!-- end of: Actions -->
+                                        
+                                    </header> <!-- end of: MARKETING VIEW ACTION -->
+                                    
+                                    <article>
+                                        <table class="table table--dsh">
+                                            <thead>
+                                                <tr>
+                                                    <th>Campaign Name</th>
+                                                    <th>Conversion</th>
+                                                    <th>Reach</th>
+                                                    <th>End Date</th>
+                                                    <th class="text-center">Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <!-- Campaign name -->
+                                                    <td><a class="lnk-underlined" href="#" title="Beer Campaign">Beer Campaign</a></td> <!-- end of: Campaign name -->
+                                                    
+                                                    <!-- Conversion -->
+                                                    <td>13%</td> <!-- end of: Conversion -->
+                                                    
+                                                    <!-- Reach -->
+                                                    <td>2876</td> <!-- end of: Reach -->
+                                                    
+                                                    <!-- End date -->
+                                                    <td>Sept 1, 2015</td> <!-- end of: End date -->
+                                                    
+                                                    <!-- Action -->
+                                                    <td class="text-center">
+                                                        <!-- Edit -->
+                                                        <a class="action__edit hvr-bob" href="#" title="Edit campaign">
+                                                            <i class="fa fa-pencil"></i>
+                                                        </a> <!-- end of edit -->
+
+                                                        <!-- Remove -->
+                                                        <a class="action__remove hvr-bob" href="#" data-reveal-id="deleteCampaign" title="Delete campaign">
+                                                            <i class="fa fa-times"></i>
+                                                        </a> <!-- end of remove -->
+                                                    </td> <!-- end of: Action -->
+                                                </tr>
+                                                <tr>
+                                                    <!-- Campaign name -->
+                                                    <td><a class="lnk-underlined" href="#" title="Monday Campaign">Monday Campaign</a></td> <!-- end of: Campaign name -->
+                                                    
+                                                    <!-- Conversion -->
+                                                    <td>36%</td> <!-- end of: Conversion -->
+                                                    
+                                                    <!-- Reach -->
+                                                    <td>3028</td> <!-- end of: Reach -->
+                                                    
+                                                    <!-- End date -->
+                                                    <td>Aug 12, 2015</td> <!-- end of: End date -->
+                                                    
+                                                    <!-- Action -->
+                                                    <td class="text-center">
+                                                        <!-- Edit -->
+                                                        <a class="action__edit hvr-bob" href="#" title="Edit campaign">
+                                                            <i class="fa fa-pencil"></i>
+                                                        </a> <!-- end of edit -->
+
+                                                        <!-- Remove -->
+                                                        <a class="action__remove hvr-bob" href="#" data-reveal-id="deleteCampaign" title="Delete campaign">
+                                                            <i class="fa fa-times"></i>
+                                                        </a> <!-- end of remove -->
+                                                    </td> <!-- end of: Action -->
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        
+                                        <!-- Stores pagination -->
+                                        <div class="pagination-centered">
+                                            <ul class="pagination">
+                                                <li class="arrow unavailable"><a href="">&lt;</a>
+                                                </li><li class="current"><a href="">1</a>
+                                                </li><li><a href="">2</a>
+                                                </li><li><a href="">3</a>
+                                                </li><li><a href="">4</a>
+                                                </li><li class="arrow"><a href="">&gt;</a></li>
+                                            </ul>
+                                        </div> <!-- end of stores pagination -->
+                                    </article>
+                                </div> <!-- end of #marketing -->
+
+                            </div> <!-- end of tabs content -->
+                        </div>
+                    </main> <!-- end of #main -->
+                </div>
+            </div>
+        </div> <!-- end of #container -->
+       <!--
+            DELETE MODAL DIALOG
+        -->
+        <div id="deleteStore" class="reveal-modal text-center" data-reveal aria-labelledby="storeTitle"
+            aria-hidden="true" role="dialog">
+            
+            <!-- Store icon: favicon.png -->
+            <img class="favicon" src="images/favicon.png" alt="notibrew" title="notibrew"/> <!-- end of store icon -->
+            
+            <!-- Store name
+                NOTE: Store name is hidden, and it must be present for aria-labelledby attribute -->
+            <h2 id="storeTitle" class="hidden-for-small-up">Top Hops Beer Shop</h2> <!-- end of store name -->
+            
+            <!-- Confirmation message -->
+            <p><strong>Are you sure you want to delete this store?</strong></p> <!-- end of confirmation message -->
+            
+            <!-- Actions -->
+            <ul class="no-bullet inline-list action-group">
+                <!-- Yes action -->
+                <li>
+                    <a href="#" class="button alert" title="Yes">Yes</a></li> <!-- end of yes action -->
+                
+                <!-- No action
+                    NOTE: Please change the data-modal value to match the modal id; this will be use to reference which modal to close -->
+                <li>
+                    <a id="close-modal" class="button secondary" href="#" title="No" data-modal="deleteStore">No</a></li> <!-- end of no action -->
+            
+            </ul> <!-- end of actions -->
+            
+        </div> <!-- END OF DELETE MODAL DIALOG -->
+        <div id="orderDetails" class="reveal-modal text-center" data-reveal aria-labelledby="orderTitle"
+            aria-hidden="true" role="dialog">
+            
+            <!-- Store icon: favicon.png -->
+            <img class="favicon" src="../assets/retailer/images/favicon.png" alt="notibrew" title="notibrew"/> <!-- end of store icon -->
+            
+            <!-- Title message -->
+            <h4 id="orderTitle" class="title">Order Details</h4> <!-- end of title message -->
+            
+            <!-- Order summary -->
+            <table class="order-summary">
+                <thead>
+                    <tr>
+                        <th>Beer Name</th>
+                        <th>Price</th>
+                        <th class="text-right">Qty</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <!-- Beer name -->
+                        <td>Sapporo Premium Lager</td> <!-- end of beer name -->
+                        
+                        <!-- Price -->
+                        <td>$15</td> <!-- end of price -->
+                        
+                        <!-- Quantity -->
+                        <td class="text-right">10</td> <!-- end of quantity -->
+                    </tr>
+                    <tr>
+                        <!-- Beer name -->
+                        <td>Chimay</td> <!-- end of beer name -->
+                        
+                        <!-- Price -->
+                        <td>$22</td> <!-- end of price -->
+                        
+                        <!-- Quantity -->
+                        <td class="text-right">15</td> <!-- end of quantity -->
+                    </tr>
+                </tbody>
+            </table> <!-- end of order summary -->
+            
+            <!-- Actions -->
+            <ul class="no-bullet inline-list action-group" style="margin-bottom: 0;">
+                <li><a id="lnk-orderDetails" class="button secondary" href="#" data-details>Check inventory and distributor</a></li>
+            </ul> <!-- end of actions -->
+            
+            <!-- 
+                FULL ORDER DETAIL
+            -->
+            <article id="orderFullDetails" class="full-details">
+                <!-- IN STOCK -->
+                <article>
+                    <!-- Legend -->
+                    <h5>IN STOCK</h5> <!-- endo of legend -->
+                    
+                    <!-- In stock summary -->
+                    <table class="order-summary">
+                        <thead>
+                            <tr>
+                                <th>Beer Name</th>
+                                <th>Price</th>
+                                <th class="text-right">Qty</th>
+                            </tr>
+                        </thead>
+                        
+                        <tbody>
+                            <tr>
+                                <!-- Beer name -->
+                                <td>Sapporo Premium Lager</td> <!-- end of beer name -->
+                                
+                                <!-- Price -->
+                                <td>$15</td> <!-- end of price -->
+                                
+                                <!-- Quantity -->
+                                <td class="text-right">10</td> <!-- end of quantity -->
+                            </tr>
+                            <tr>
+                                <!-- Beer name -->
+                                <td>Chimay</td> <!-- end of beer name -->
+                                
+                                <!-- Price -->
+                                <td>$22</td> <!-- end of price -->
+                                
+                                <!-- Quantity -->
+                                <td class="text-right">0</td> <!-- end of quantity -->
+                            </tr>
+                        </tbody>
+                    </table> <!-- end of in stock summary -->
+                </article> <!-- END OF IN STOCK -->
+                
+                <!-- ORDER  -->
+                <article>
+                    <!-- Legend -->
+                    <h5>IN STOCK</h5> <!-- endo of legend -->
+                    
+                    <!-- Order summary -->
+                    <table class="order-summary">
+                        <thead>
+                            <tr>
+                                <th>Beer Name</th>
+                                <th>Price</th>
+                                <th class="text-right">Qty</th>
+                            </tr>
+                        </thead>
+                        
+                        <tbody>
+                            <tr>
+                                <!-- Beer name -->
+                                <td>Chimay</td> <!-- end of beer name -->
+                                
+                                <!-- Price -->
+                                <td>$22</td> <!-- end of price -->
+                                
+                                <!-- Quantity -->
+                                <td class="text-right">15</td> <!-- end of quantity -->
+                            </tr>
+                        </tbody>
+                    </table> <!-- end of order summary -->
+                </article> <!-- END OF ORDER -->
+                
+                <!-- Actions -->
+                <ul class="no-bullet inline-list action-group">
+                    <!-- Finalize action -->
+                    <li>
+                        <a href="#" class="button secondary" title="Finalize">Finalize</a></li> <!-- end of finalize action -->
+
+                    <!-- Order action -->
+                    <li>
+                        <a class="button" href="#" title="Order">Order</a></li> <!-- end of order action -->
+
+                </ul> <!-- end of actions -->
+            </article> <!-- END OF FULL ORDER DETAILS -->
+            
+        </div> <!-- END OF ORDER DETAILS MODAL DIALOG -->
+        <!-- Scripts -->
+        <script type="text/javascript" src="../assets/retailer/js/dist/app.js"></script>
+    </body>
+</html>

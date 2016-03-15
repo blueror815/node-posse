@@ -1,0 +1,14 @@
+﻿<ion-view title="{{navTitle}}" align-title="left">
+    <ion-content>
+        <div class="bar bar-subheader bar-stable static task_title">
+            <label class="pull-right">My Tasks</label>
+        </div>
+        <ion-list>
+            <ul class="list">
+                <li class="item" ng-repeat="task in tasks">
+                    <a ng-href="/#/app/task/{{task._id}}">{{task.name}}</a>
+                </li>
+            </ul>
+        </ion-pane>
+    </ion-content>
+</ion-view>

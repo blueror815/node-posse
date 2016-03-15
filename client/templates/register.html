@@ -1,0 +1,35 @@
+<ion-view hide-nav-bar="true">
+  <ion-content style="background-color:#008cc2;">
+    <div class="logo">
+        <div class="content">
+            <div class="app-logo"></div>
+            <div class="app-icon"></div>
+        </div>
+    </div>
+    <form ng-submit="doRegister()">
+      <div class="list list-inset login_form">
+        <label class="item item-input">
+          <span class="input-label">Username</span>
+          <input type="text" ng-model="regData.username">
+        </label>
+        
+        <label class="item item-input">
+          <span class="input-label">Password</span>
+          <input type="password" ng-pattern="/^[a-zA-Z0-9]{6,10}$/" ng-model="regData.password"> 
+          <span ng-show="regData.password.$dirty &amp;&amp; regData.password.$error.required" class="text-danger">This field is required</span>
+          <span ng-show="regData.password.$dirty &amp;&amp; regData.password.$error.pattern" class="text-danger">Input should match 'a-zA-Z0-9' and 6-10 length</span>
+        </label>
+
+        <label class="item item-input">
+          <span class="input-label">Confirm Password</span>
+          <input type="password" ng-model="regData.password_confirm" ui-validate="'$value==regData.password'">
+          <span ng-show="regData.password_confirm.$dirty &amp;&amp; regData.password_confirm.$error.validator" class="text-danger">Password does Not match</span> 
+        </label>
+        
+        <button class="button button-block button-energized" ng-click="goLogin()">Login</button>
+        <button class="button button-block button-energized" type="submit">Register</button>
+
+      </div>
+    </form>
+  </ion-content>
+</ion-view>
